@@ -1,0 +1,118 @@
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+  }
+  .btnn{
+    display: none;
+  }
+  .li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+  .navbar{
+    display: flex;
+    height:10vh;
+    background-color: pink;
+    z-index: 12;
+    width: 100%;
+  }
+  .navbar > .left{
+  flex: 50%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  }
+  .left > .links a{
+    text-decoration: none;
+    color: white;
+    margin-left: 12px;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  .left >.links a:hover{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    padding: 8px;
+  }
+  .navbar > .right{
+    flex: 50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+    .right > input{
+      padding: 9px;
+      border-radius: 10px;
+      flex: 0.4;
+      font-size: 0.9rem;
+      margin-right: 5px;
+    }
+    .right>button{
+      padding: 9px;
+      margin-left: 10px;
+      border: none;
+      background-color: transparent;
+      
+    }
+    .right>button>.MuiSvgIcon-root{
+      font-size: 1.9rem;
+    }
+    #hidden{
+      display: flex;
+    }
+    @media (max-width:967px){
+      .navbar>.left{
+        font-size: 20px;
+      }
+    }
+    @media (max-width:816px){
+      .navbar>.left{
+        font-size: 16px;
+      }
+    }
+    @media(max-width:680px){
+      .left>.links{
+        display: none;
+      }
+      .btnn{
+        display: block;
+      }
+     .navbar> .left{
+          flex: 0.2;
+      }
+      .navbar>.right{
+          flex: 0.8;
+      }
+      #hidden{
+        position: absolute;
+        top: 10vh;
+        left: 0px;
+        height: auto;
+        width: 100%;
+        background-color: pink;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        transition: all 1s ease;
+        z-index: 100;
+      }
+       
+      #hidden >a{
+        margin-top: 10px;
+    }
+  }
+  .nbt{
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+  }
+  .nbt:hover{
+    color: black;
+    background-color: white;
+    font-weight: 550;
+  }

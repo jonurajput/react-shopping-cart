@@ -1,0 +1,19 @@
+.model{
+    background:rgba(255, 192, 203, 0.583);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.model_group >input{
+      background-color: transparent;
+    
+      border: 1px solid white;
+      padding: 8px;
+      margin-top: 8px;
+      color: white;
+}
